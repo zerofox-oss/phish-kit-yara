@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  phishkityara:
+    container_name: phishkityara
+    build: .
+    tty: true
+    volumes:
+      - ./rules:/yara/rules
+      - ./files:/yara/files
